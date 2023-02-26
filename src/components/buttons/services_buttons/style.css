@@ -1,0 +1,10 @@
+.wrapper {
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
+  width: fit-content;
+  padding: 8px 20px;
+}
+.wrapper:hover {
+  background-color: #0559ad;
+}

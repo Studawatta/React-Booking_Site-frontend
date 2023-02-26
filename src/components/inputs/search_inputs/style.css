@@ -1,0 +1,34 @@
+.locationWrapper {
+  padding: 10px 100px 10px 10px;
+  background-color: white;
+  width: fit-content;
+  display: flex;
+  border-radius: 5px;
+}
+.bedIcon {
+  font-size: 24px;
+  color: gray;
+  padding-right: 5px;
+}
+input {
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+input::placeholder {
+  font-size: 14px;
+  color: black;
+}
+input:focus::placeholder {
+  color: gray;
+}
+.dateWrapper {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: white;
+  width: fit-content;
+  display: flex;
+  border-radius: 5px;
+}
+.date {
+}

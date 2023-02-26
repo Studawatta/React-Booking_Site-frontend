@@ -1,0 +1,12 @@
+.wrapper {
+  width: fit-content;
+  background-color: #fdfdfd;
+  padding: 8px;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #056dd5;
+  font-weight: 500;
+}
+.wrapper:hover {
+  background-color: #f5f4f4;
+}
