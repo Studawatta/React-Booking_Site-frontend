@@ -1,4 +1,4 @@
-.wrapper {
+.entryWrapper {
   width: fit-content;
   background-color: #fdfdfd;
   padding: 8px;
@@ -7,6 +7,6 @@
   color: #056dd5;
   font-weight: 500;
 }
-.wrapper:hover {
+.entryWrapper:hover {
   background-color: #f5f4f4;
 }

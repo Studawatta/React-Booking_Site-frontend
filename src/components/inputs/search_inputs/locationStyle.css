@@ -22,13 +22,3 @@ input::placeholder {
 input:focus::placeholder {
   color: gray;
 }
-.dateWrapper {
-  margin-top: 20px;
-  padding: 10px;
-  background-color: white;
-  width: fit-content;
-  display: flex;
-  border-radius: 5px;
-}
-.date {
-}

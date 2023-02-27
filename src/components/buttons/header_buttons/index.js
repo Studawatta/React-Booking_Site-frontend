@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css';
 
 const HeaderButton = (props) => {
-  return <div className="wrapper">{props.type}</div>;
+  return <div className="headerWrapper">{props.type}</div>;
 };
 
 export default HeaderButton;
