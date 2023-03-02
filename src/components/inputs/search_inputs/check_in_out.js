@@ -1,18 +1,31 @@
-import React from 'react';
-
+import React, { useState } from 'react';
 import './check_in_outStyle.css';
 
-const CheckInOut = () => {
+const CheckInOut = (props) => {
+  const [showCheckIn, setShowCheckIn] = useState(false);
   return (
     <div>
-      <input
-        placeholder="Date"
-        class="textbox-n"
-        type="text"
-        onfocus="(this.type='date')"
-        onblur="(this.type='text')"
-        id="date"
-      />
+      {showCheckIn ? (
+        ''
+      ) : (
+        <div
+          className="checkInCont"
+          onClick={() => {
+            setShowCheckIn(!showCheckIn);
+          }}
+        >
+          {props.type}
+        </div>
+      )}
+
+      {showCheckIn ? (
+        <input
+          className="dateCont"
+          type="date"
+        />
+      ) : (
+        ''
+      )}
     </div>
   );
 };

@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import CheckInOut from './components/inputs/search_inputs/check_in_out';
+import Rooms from './components/inputs/search_inputs/rooms';
 
 const App = () => {
   return (
     <div className="a">
       <div className="aa">
-        <CheckInOut />
+        <Rooms />
       </div>
     </div>
   );

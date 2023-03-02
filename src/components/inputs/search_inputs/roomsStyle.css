@@ -1,0 +1,51 @@
+.roomsCont {
+  padding: 10px 10px 10px 10px;
+  background-color: white;
+  width: fit-content;
+  display: flex;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.inputCont {
+  padding: 10px 20px 20px 20px;
+  background-color: white;
+  width: fit-content;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+.cont {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  color: #4d4d4d;
+  justify-content: space-between;
+  width: 250px;
+  margin-top: 5px;
+}
+.changeValCont {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #4d4d4d;
+
+  border: 2px solid #bfbfbf;
+  border-radius: 4px;
+}
+.val {
+  padding: 0px 12px;
+}
+.decrease,
+.increase {
+  padding: 0px 12px;
+  color: rgb(80, 80, 250);
+  font-size: 24px;
+  cursor: pointer;
+}
+.decrease:hover,
+.increase:hover {
+  background-color: #e6f0ff;
+}
+.confirmation {
+  width: 250px;
+  border: 2px solid rgb(56, 56, 255);
+}
