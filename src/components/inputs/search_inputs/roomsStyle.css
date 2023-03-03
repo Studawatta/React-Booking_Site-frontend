@@ -32,7 +32,8 @@
   border-radius: 4px;
 }
 .val {
-  padding: 0px 12px;
+  width: 25px;
+  text-align: center;
 }
 .decrease,
 .increase {
@@ -40,6 +41,9 @@
   color: rgb(80, 80, 250);
   font-size: 24px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .decrease:hover,
 .increase:hover {
@@ -47,5 +51,22 @@
 }
 .confirmation {
   width: 250px;
-  border: 2px solid rgb(56, 56, 255);
+  border: 2px solid #5eacfb;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  color: #0a63bc;
+  font-weight: 500;
+  padding: 5px 0 5px 0;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.confirmation:hover {
+  background-color: #e7f2fe;
+}
+.notAllowed {
+  padding: 0px 12px;
+  color: rgb(80, 80, 250);
+  font-size: 24px;
+  cursor: not-allowed;
 }

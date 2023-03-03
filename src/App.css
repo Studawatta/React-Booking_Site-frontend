@@ -1,10 +1,19 @@
 .a {
   background-color: #05509b;
   height: 500px;
-  width: 800px;
+  width: 1200px;
   position: fixed;
 }
 .aa {
   margin-top: 50px;
   margin-left: 30px;
+  display: flex;
+  width: 950px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 5px;
+  height: 60px;
+  background-color: yellow;
+  justify-content: space-between;
+  align-items: center;
 }
