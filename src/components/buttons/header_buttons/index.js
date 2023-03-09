@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css';
+import './header_buttons_style.css';
 
 const HeaderButton = (props) => {
   return <div className="headerWrapper">{props.type}</div>;

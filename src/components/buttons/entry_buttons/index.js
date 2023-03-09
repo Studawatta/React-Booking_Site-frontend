@@ -1,8 +1,8 @@
 import React from 'react';
-import './style.css';
+import './entry_buttons_style.css';
 
 const EntryButton = (props) => {
-  return <div className="entryWrapper">{props.name}</div>;
+  return <div className="entryWrapper">{props.type}</div>;
 };
 
 export default EntryButton;
