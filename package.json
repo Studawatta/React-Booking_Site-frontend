@@ -44,5 +44,8 @@
   },
   "overrides": {
     "react": "$react"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
   }
 }

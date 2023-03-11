@@ -1,9 +1,11 @@
 .locationWrapper {
-  padding: 10px 100px 10px 10px;
+  padding: 0 200px 0 10px;
   background-color: white;
   width: fit-content;
+  height: 45px;
   display: flex;
-  border-radius: 5px;
+  border-radius: 5px 5px 5px 5px;
+  align-items: center;
 }
 .bedIcon {
   font-size: 24px;
