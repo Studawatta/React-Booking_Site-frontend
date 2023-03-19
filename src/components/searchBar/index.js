@@ -1,23 +1,36 @@
 import React, { useState } from 'react';
+import { MdBed } from 'react-icons/md';
+import SearchButton from '../buttons/search_button';
+import './searchStyle.css';
 
-import './roomsStyle.css';
-
-const Rooms = () => {
+const Search = () => {
   const [showInputs, setShowInputs] = useState(false);
 
   const [adultsCount, setAdultsCount] = useState(1);
   const [childrenCount, setChildrenCount] = useState(0);
   const [roomsCount, setRoomsCount] = useState(1);
-
   return (
     <div>
-      <div
-        className="roomsCont"
-        onClick={() => {
-          setShowInputs(!showInputs);
-        }}
-      >
-        {adultsCount} adults {childrenCount} children {roomsCount} rooms
+      <div className="searchCont">
+        <div className="locationWrapper">
+          <MdBed className="bedIcon" />
+          <input
+            className="location"
+            placeholder="Where are you going?"
+            type="text"
+          />
+        </div>
+        <div className="checkInCont">Check in - Check out</div>
+        <div
+          className="roomsCont"
+          onClick={() => {
+            setShowInputs(!showInputs);
+          }}
+        >
+          {adultsCount} adults {childrenCount} children {roomsCount} rooms
+        </div>
+
+        <SearchButton />
       </div>
       {showInputs ? (
         <div className="inputCont">
@@ -109,4 +122,4 @@ const Rooms = () => {
   );
 };
 
-export default Rooms;
+export default Search;

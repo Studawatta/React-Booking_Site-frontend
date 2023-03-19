@@ -1,10 +1,57 @@
+.searchCont {
+  background-color: #febb02;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1030px;
+  padding: 0 5px 0 5px;
+  height: 54px;
+  border-radius: 5px;
+  margin-top: 45px;
+}
+.locationWrapper {
+  padding: 0 200px 0 10px;
+  background-color: white;
+  width: fit-content;
+  height: 45px;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+}
+.bedIcon {
+  font-size: 24px;
+  color: gray;
+  padding-right: 5px;
+}
+input {
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+input::placeholder {
+  font-size: 14px;
+  color: black;
+}
+input:focus::placeholder {
+  color: gray;
+}
+.checkInCont {
+  padding: 0 30px 0 30px;
+  background-color: white;
+  width: fit-content;
+  height: 45px;
+  display: flex;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+}
 .roomsCont {
   padding: 0 30px 0 30px;
   background-color: white;
   width: fit-content;
   height: 45px;
   display: flex;
-  border-radius: 5px 5px 5px 5px;
+  border-radius: 5px;
   cursor: pointer;
   align-items: center;
 }
@@ -13,7 +60,9 @@
   background-color: white;
   width: fit-content;
   margin-top: 5px;
+  margin-left: 628px;
   border-radius: 5px;
+  box-shadow: 0 5px 10px 2px #ccc;
 }
 .cont {
   display: flex;

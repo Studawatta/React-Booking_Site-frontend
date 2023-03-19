@@ -5,11 +5,9 @@ import { AiOutlineQuestionCircle } from 'react-icons/ai';
 
 import './navStyle.css';
 import EntryButton from '../buttons/entry_buttons';
-import LocationInput from '../inputs/search_inputs/location';
-import CheckInOut from '../inputs/search_inputs/check_in_out';
-import Rooms from '../inputs/search_inputs/rooms';
-import SearchButton from '../buttons/search_button';
+
 import { MdBed } from 'react-icons/md';
+import Search from '../searchBar';
 
 const NavBar = () => {
   const [currentPage, setCurrentPage] = useState('stays');
@@ -79,16 +77,7 @@ const NavBar = () => {
               Search low prices on hotels, homes and much more...
             </h3>
           </div>
-          <div className="searchBar">
-            <LocationInput />
-            <div className="flex">
-              <CheckInOut type="Check-in" />
-              <CheckInOut type="Check-out" />
-            </div>
-
-            <Rooms />
-            <SearchButton />
-          </div>
+          <Search />
         </div>
       </div>
     </Router>
