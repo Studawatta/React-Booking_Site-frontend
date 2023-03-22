@@ -1,13 +1,10 @@
 import React from 'react';
-import HomeHero from '../components/homeHero/homeHero';
-import NavBar from '../components/navBar';
+import Topbar from '../components/topbar/Topbar';
 
 const Home = () => {
   return (
     <div className="">
-      <NavBar />
-
-      <HomeHero />
+      <Topbar />
     </div>
   );
 };

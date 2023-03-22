@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
+import './search.css';
+
 import { MdBed } from 'react-icons/md';
-import SearchButton from '../buttons/search_button';
-import './searchStyle.css';
 
 const Search = () => {
   const [showInputs, setShowInputs] = useState(false);
@@ -29,8 +29,7 @@ const Search = () => {
         >
           {adultsCount} adults {childrenCount} children {roomsCount} rooms
         </div>
-
-        <SearchButton />
+        <button className="searchButton">Search</button>
       </div>
       {showInputs ? (
         <div className="inputCont">

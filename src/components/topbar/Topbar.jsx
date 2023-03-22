@@ -1,34 +1,36 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
-import HeaderButton from '../buttons/header_buttons';
+import './topbar.css';
+
 import { AiOutlineQuestionCircle } from 'react-icons/ai';
-
-import './navStyle.css';
-import EntryButton from '../buttons/entry_buttons';
-
 import { MdBed } from 'react-icons/md';
-import Search from '../searchBar';
+import Search from '../searchBar/Search';
 
 const NavBar = () => {
   const [currentPage, setCurrentPage] = useState('stays');
   return (
     <Router>
-      <div className="navWrapper">
-        <div className="navCont">
-          <div className="navHead">
-            <Link className="homeLink">Booking.com</Link>
-            <div className="headerB">
-              <HeaderButton type="LKR" />
-              <HeaderButton type="Country" />
-              <HeaderButton type={<AiOutlineQuestionCircle />} />
-              <HeaderButton type="List your property" />
-              <EntryButton type="Register" />
-              <EntryButton type="Sign in" />
+      <div className="topbarContainer">
+        <div className="topbarWrapper">
+          <div className="topbarHead">
+            <Link className="logo">Booking.com</Link>
+            <div className="topbarHeadRight">
+              <button className="headerButton">Currency</button>
+              <button className="headerButton">Country</button>
+              <button className="headerButton">
+                <AiOutlineQuestionCircle />
+              </button>
+              <button className="headerButton">List yout property</button>
+
+              <button className="entryButton">Register</button>
+              <button className="entryButton">Sign In</button>
             </div>
           </div>
-          <div className="raw_2">
+          <div className="topbarMiddle">
             <div
-              className={`${currentPage === 'stays' ? 'cPage' : 'page'}`}
+              className={`${
+                currentPage === 'stays' ? 'currentPage' : 'otherPages'
+              }`}
               onClick={() => {
                 setCurrentPage('stays');
               }}
@@ -37,7 +39,9 @@ const NavBar = () => {
               Stays
             </div>
             <div
-              className={`${currentPage === 'flights' ? 'cPage' : 'page'}`}
+              className={`${
+                currentPage === 'flights' ? 'currentPage' : 'otherPages'
+              }`}
               onClick={() => {
                 setCurrentPage('flights');
               }}
@@ -45,7 +49,9 @@ const NavBar = () => {
               Flights
             </div>
             <div
-              className={`${currentPage === 'carRentals' ? 'cPage' : 'page'}`}
+              className={`${
+                currentPage === 'carRentals' ? 'currentPage' : 'otherPages'
+              }`}
               onClick={() => {
                 setCurrentPage('carRentals');
               }}
@@ -53,7 +59,9 @@ const NavBar = () => {
               Car rentals
             </div>
             <div
-              className={`${currentPage === 'attractions' ? 'cPage' : 'page'}`}
+              className={`${
+                currentPage === 'attractions' ? 'currentPage' : 'otherPages'
+              }`}
               onClick={() => {
                 setCurrentPage('attractions');
               }}
@@ -61,7 +69,9 @@ const NavBar = () => {
               Attractions
             </div>
             <div
-              className={`${currentPage === 'airportTaxis' ? 'cPage' : 'page'}`}
+              className={`${
+                currentPage === 'airportTaxis' ? 'currentPage' : 'otherPages'
+              }`}
               onClick={() => {
                 setCurrentPage('airportTaxis');
               }}
@@ -69,7 +79,7 @@ const NavBar = () => {
               Airport taxis
             </div>
           </div>
-          <div className="raw_3">
+          <div className="topbarBottom">
             <h1 className="text-[40px] font-bold text-white mt-[80px]">
               Find your next stay
             </h1>

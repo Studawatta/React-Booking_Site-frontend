@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1030px;
+  width: 95%;
   padding: 0 5px 0 5px;
   height: 54px;
   border-radius: 5px;
@@ -54,6 +54,22 @@ input:focus::placeholder {
   border-radius: 5px;
   cursor: pointer;
   align-items: center;
+}
+.searchButton {
+  background-color: #3366ff;
+  width: fit-content;
+  height: 45px;
+  padding: 0 25px 0 25px;
+  color: white;
+  font-weight: 400;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.searchButton:hover {
+  background-color: #002db3;
 }
 .inputCont {
   padding: 10px 20px 20px 20px;
